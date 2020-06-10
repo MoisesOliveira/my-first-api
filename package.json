@@ -18,7 +18,6 @@
   "homepage": "https://github.com/MoisesOliveira/my-first-api#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.9.18",
-    "mongose": "0.0.2-security"
+    "mongoose": "^5.9.18"
   }
 }
