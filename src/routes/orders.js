@@ -2,9 +2,14 @@ const express = require('express')
 const router = express.Router()
 
 router.post('/',(req,res,next)=>{
+    let productID = req.body.productID;
+    let quantity = req.body.quantity;
     res.status(201).json({
-        message:'posting new order'
+        message: "everything ok",
+        product: productID,
+        quantity: quantity
     })
+    
 })
 
 router.get('/:orderID', (req,res,next)=>{
@@ -13,4 +18,5 @@ router.get('/:orderID', (req,res,next)=>{
         message: `consulting order ${orderID}`
     })
 })
+
 module.exports = router;
