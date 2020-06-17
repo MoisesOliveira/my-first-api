@@ -5,7 +5,7 @@ const morgan = require('morgan')
 const app = express();
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-
+const multer = require('multer')
 //Setting CORS
 app.use((req,res,next)=>{
     res.header('Access-Control-Allow-Origin','*');
